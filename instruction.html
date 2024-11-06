@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter - Instructions</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-brand" href="#">TimeConverter</a>
+            <div class="nav-links">
+                <a class="nav-link" href="page.html">Home</a>
+                <a class="nav-link active" href="instruction.html">Instruction</a>
+                <a class="nav-link" href="https://www.freecodecamp.org/news/mathematics-converting-am-pm-to-24-hour-clock/">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>How to Use the Time Converter</h1>
+    </header>
+
+    <!-- Instruction Content -->
+    <main class="instruction-container">
+        <div class="instruction-content">
+            <h2>Step-by-Step Guide</h2>
+            <ol>
+                <li>
+                    <strong>Select Input Format:</strong>
+                    <p>Choose the format of the time you want to convert from the dropdown menu. You can select either <em>12-Hour</em> or <em>24-Hour</em> format.</p>
+                </li>
+                <li>
+                    <strong>Enter Time:</strong>
+                    <p>Input the time you wish to convert in the provided text field. Ensure that the time matches the selected input format.</p>
+                    <ul>
+                        <li><em>12-Hour Format:</em> Enter time like <code>1:13 PM</code> or <code>11:45 AM</code>.</li>
+                        <li><em>24-Hour Format:</em> Enter time like <code>13:13</code> or <code>23:45</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Convert Time:</strong>
+                    <p>Click the <strong>Convert</strong> button to perform the conversion. The converted time will be displayed below the form.</p>
+                </li>
+                <li>
+                    <strong>View Default Current Time:</strong>
+                    <p>Upon selecting an input format, the current time in the opposite format will be displayed to help you verify the conversion.</p>
+                </li>
+            </ol>
+
+            <h2>Example Usage</h2>
+            <p>Let's walk through an example to understand how the Time Converter works:</p>
+            <ul>
+                <li><strong>Select Input Format:</strong> Choose <em>12-Hour</em> from the dropdown.</li>
+                <li><strong>Enter Time:</strong> Input <code>2:30 PM</code> in the text field.</li>
+                <li><strong>Convert Time:</strong> Click the <strong>Convert</strong> button.</li>
+                <li><strong>Result:</strong> The application will display <code>14:30</code> as the converted time in <em>24-Hour</em> format.</li>
+            </ul>
+
+            <h2>Tips for Accurate Conversion</h2>
+            <ul>
+                <li>Ensure that the time you enter matches the selected input format to avoid validation errors.</li>
+                <li>Use leading zeros for hours and minutes if necessary (e.g., <code>09:05 AM</code>).</li>
+                <li>Double-check the AM/PM designation when using the 12-Hour format.</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-brand" href="#">TimeConverter</a>
+            <div class="nav-links">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="instruction.html">Instruction</a>
+                <a class="nav-link" href="https://www.freecodecamp.org/news/mathematics-converting-am-pm-to-24-hour-clock/">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Time Converter</h1>
+    </header>
+
+    <!-- Converter Container -->
+    <main class="converter-container">
+        <form id="timeConverterForm">
+            <!-- Input Format Selection -->
+            <div class="form-group">
+                <label for="inputFormat">Select Input Format</label>
+                <select id="inputFormat" name="inputFormat" required>
+                    <option value="" disabled selected>Select Input Format</option>
+                    <option value="12">12-Hour</option>
+                    <option value="24">24-Hour</option>
+                </select>
+            </div>
+
+            <!-- Time Input -->
+            <div class="form-group">
+                <label for="time">Enter Time</label>
+                <input type="text" id="time" name="time" placeholder="e.g., 1:13 PM or 13:13" required disabled>
+                <small id="timeHelp">Enter time in the selected input format.</small>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="convertButton" disabled>Convert</button>
+        </form>
+
+        <!-- Result Display -->
+        <div class="result-box" id="resultBox">
+            <!-- JavaScript will insert the result here -->
+        </div>
+
+        <!-- Default Time Display -->
+        <div class="default-time" id="defaultTimeDisplay">
+            <!-- JavaScript will insert the default time here -->
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 TimeConverter. All rights reserved.</p>
+    </footer>
+    
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
